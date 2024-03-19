@@ -1,2 +1,12 @@
 https://github.com/ksalcogr/Training/blob/main/phishing_spam.ipynb (salevourakis)
 
+https://github.com/nasoufisdim/EKPA/blob/main/phishing.ipynb (nasoufis_1)
+
+Comparison of Classifiers:
+               Classifier  Accuracy  Precision    Recall  F1 Score
+2  RandomForestClassifier  0.861333   0.867182  0.861333  0.860587
+5  DecisionTreeClassifier  0.860333   0.867994  0.860333  0.859382
+3           MLPClassifier  0.857333   0.867167  0.857333  0.856116
+4    KNeighborsClassifier  0.855667   0.859856  0.855667  0.855072
+1                     SVC  0.833333   0.861979  0.833333  0.829447
+0      LogisticRegression  0.809667   0.835666  0.809667  0.805289
