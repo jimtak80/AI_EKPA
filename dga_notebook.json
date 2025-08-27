@@ -1,0 +1,138 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "DGA_Classification.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPdFznM5RrOY9gxOzMxblX5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kdemertzis/EKPA/blob/main/DGA_Classification.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2rvGqQdY9C6s"
+      },
+      "source": [
+        "# εγκατάσταση πακέτου pycaret (https://pycaret.org/)\n",
+        "!pip install pycaret\n",
+        "# ***ΠΡΟΣΟΧΗ*** μετά την εγκατάσταση χρειάζεται restart το session\n",
+        "# ***θα σας ζητηθεί επανεκκίνηση με σχετικό κόκκινο μήνυμα μετά την ολοκλήρωση της εγκατάστασης\n",
+        "# ***Πατήστε το κουμπί RESTART SESSION στο σχετικό μήνυμα"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7LfnpwSS9nue"
+      },
+      "source": [
+        "# εισαγωγή βιβλιοθηκών - πακέτων\n",
+        "import pycaret\n",
+        "import pandas as pd\n",
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "from pycaret.classification import *"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZunbzPVa9a6g"
+      },
+      "source": [
+        "# εισαγωγή του συνόλου δεδομένων\n",
+        "url = 'https://raw.githubusercontent.com/kdemertzis/EKPA/main/Data/dga_2class.csv'\n",
+        "df = pd.read_csv(url)\n",
+        "# έλεγχος σχήματος συνόλου δεδομένων\n",
+        "print(df.shape)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DCynJDtpYx8z"
+      },
+      "source": [
+        "# ανακάτεμα των δεδομένων\n",
+        "df = df.sample(frac = 1)\n",
+        "print(df.head())"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "J6y3Zhq2-EZ8"
+      },
+      "source": [
+        "# εγκατάσταση του συνόλου δεδομένων\n",
+        "grid = setup(data=df, target=df.columns[-1], html=False, verbose=False)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZGJ7kigzA1Rf"
+      },
+      "source": [
+        "# σύγκριση των διαθέσιμων μοντέλων ΜΜ\n",
+        "best = compare_models(cross_validation=False, n_select = 1)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TorFLtNx-kCm"
+      },
+      "source": [
+        "# αναφορά των υπερπαραμέτρων του μοντέλου με την υψηλότερη απόδοση\n",
+        "print(best)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XJTnGY38yxrE"
+      },
+      "source": [
+        "# μέτρα αξιολόγησης του μοντέλου με την υψηλότερη απόδοση\n",
+        "evaluate_model(best)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
