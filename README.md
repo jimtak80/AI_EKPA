@@ -6,7 +6,9 @@
   2) 3594-c1-u1 το αρχείο anomaly_detection.ipynb
   3) 3594-c1-u2 το αρχείο DGA_classification.ipynb
   4) 3594-c1-u3
-  5) 3594-c1-u4
+  5) 3594-c1-u4 το αρχείο CyberThreatHunting.ipynb
   6) 3595-c1-u1
   7) 3595-c1-u2
+
+  8) 
 https://elearningekpa.gr/courses/sustimata-texnitis-noimosunis-stin-kubernoasfaleia
