@@ -4,6 +4,9 @@
 Για τις ασκήσεις των κεφαλαίων ισχύουν τα εξής:
   1) 3593-c1-u4 απαιτούνται τα αρχεία diabetes.ipynb, diabetes.csv, phishing_dataset.csv
   2) 3594-c1-u1 το αρχείο anomaly_detection.ipynb
-  3) 3594-c1-u2
-  4) 
+  3) 3594-c1-u2 το αρχείο DGA_classification.ipynb
+  4) 3594-c1-u3
+  5) 3594-c1-u4
+  6) 3595-c1-u1
+  7) 3595-c1-u2
 https://elearningekpa.gr/courses/sustimata-texnitis-noimosunis-stin-kubernoasfaleia
