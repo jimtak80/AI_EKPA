@@ -8,7 +8,9 @@
   4) 3594-c1-u3
   5) 3594-c1-u4 το αρχείο CyberThreatHunting.ipynb
   6) 3595-c1-u1 το αρχείο IDS_example.py
-  7) 3595-c1-u2
+  7) 3595-c1-u2 -
+  8) 3596-c1-u1
+  9) 3596-c1-u2
 
-  8) 
+     
 https://elearningekpa.gr/courses/sustimata-texnitis-noimosunis-stin-kubernoasfaleia
