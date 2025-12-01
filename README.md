@@ -5,12 +5,12 @@
   1) 3593-c1-u4 απαιτούνται τα αρχεία diabetes.ipynb, diabetes.csv, phishing_dataset.csv
   2) 3594-c1-u1 το αρχείο anomaly_detection.ipynb
   3) 3594-c1-u2 το αρχείο DGA_classification.ipynb
-  4) 3594-c1-u3
+  4) 3594-c1-u3 το αρχείο Ransomware.ipynb
   5) 3594-c1-u4 το αρχείο CyberThreatHunting.ipynb
   6) 3595-c1-u1 το αρχείο IDS_example.py
-  7) 3595-c1-u2 -
-  8) 3596-c1-u1
-  9) 3596-c1-u2
+  7) 3595-c1-u2 δεν απαιτείται αρχείο
+  8) 3596-c1-u1 δεν απαιτείται αρχείο
+  9) 3596-c1-u2 το αρχείο δεδομένων Darknet.csv
 
      
 https://elearningekpa.gr/courses/sustimata-texnitis-noimosunis-stin-kubernoasfaleia
