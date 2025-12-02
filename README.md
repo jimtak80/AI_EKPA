@@ -10,7 +10,7 @@
   6) 3595-c1-u1 το αρχείο IDS_example.py
   7) 3595-c1-u2 δεν απαιτείται αρχείο
   8) 3596-c1-u1 δεν απαιτείται αρχείο
-  9) 3596-c1-u2 το αρχείο δεδομένων Darknet.csv
+  9) 3596-c1-u2 το αρχείο threat_hunting.ipynb και το Darknet.csv
 
      
 https://elearningekpa.gr/courses/sustimata-texnitis-noimosunis-stin-kubernoasfaleia
