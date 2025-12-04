@@ -140,33 +140,3 @@ Long Short-Term Memory network for capturing temporal dependencies.
 1. Akgun, Devrim, Selman Hizal, and Unal Cavusoglu. "A new DDoS attacks intrusion detection model based on deep learning for cybersecurity." *Computers & Security* 118 (2022): 102748.
 
 2. Hizal, Selman, Ünal ÇAVUŞOĞLU, and Devrim AKGÜN. "A New Deep Learning Based Intrusion Detection System for Cloud Security." *2021 3rd International Congress on Human-Computer Interaction, Optimization and Robotic Applications (HORA)*. IEEE, 2021.
-
-## Troubleshooting
-
-**Error: "No module named 'models'"**
-- Ensure `models.py` is in the same directory as `IDS_example.py`
-- Check your working directory
-
-**Error: "Dataset file not found"**
-- Verify the dataset path: `ls Data/`
-- Update the `--dataset` argument to the correct path
-
-**Error: "Out of memory"**
-- Reduce `--batch-size` (try 128 or 64 instead of 256)
-- Use the `dense` model instead of `lstm`
-
-## Recent Updates
-
-- ✅ Created `models.py` with Conv1D, Dense, LSTM architectures
-- ✅ Fixed hardcoded absolute paths
-- ✅ Migrated from deprecated keras to tensorflow.keras
-- ✅ Updated metric names (acc → accuracy)
-- ✅ Added configurable hyperparameters
-- ✅ Added error handling and directory auto-creation
-- ✅ Created requirements.txt for dependency management
-- ✅ Added comprehensive .gitignore
-
----
-
-**Last Updated:** December 4, 2024
-**Maintained by:** EKPA e-Learning Team
